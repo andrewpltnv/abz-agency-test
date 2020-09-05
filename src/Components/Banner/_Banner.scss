@@ -1,0 +1,41 @@
+.Banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+  width: 100%;
+  background-image: url(banner-photo.jpg);
+  background-size: auto 600px;
+  span{
+    display: flex;
+    flex-direction: column;
+    max-width: 530px;
+    color: white;
+    text-wrap: normal;
+    justify-content: space-around;
+    margin: auto var(--border-paddind) auto var(--border-paddind);
+  }
+  h1{
+    margin: 0;
+    line-height: 54px;
+    letter-spacing: -0.03em;
+    word-wrap: break-spaces;
+  }
+  p{
+    margin-top: 26px;
+    margin-bottom: 26px;
+    line-height: 24px;
+  }
+  button{
+    width: 210px;
+    height: 38px;
+    color: #fff;
+    font-family: OpenSans, serif;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    border: none;
+    margin-top: 6px;
+  }
+}

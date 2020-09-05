@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url("./Open_Sans/OpenSans-Regular.ttf") format("truetype");
+}
+h1{
+  font-family: OpenSans, serif;
+  @media screen and (min-width: 360px){
+    font-size: 30px;
+    line-height: 34px;
+  }
+  @media screen and (min-width: 768px){
+    font-size: 40px;
+    line-height: 44px;
+  }
+  @media screen and (min-width: 1024px){
+    font-size: 50px;
+    line-height: 53px;
+  }
+}
+h2{
+  font-family: OpenSans, serif;
+  font-size: 24px;
+  line-height: 29px;
+}
+p{
+  font-family: OpenSans, serif;
+  font-size: 16px;
+  line-height: 25px;
+}

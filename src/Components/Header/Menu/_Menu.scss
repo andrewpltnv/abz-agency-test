@@ -1,0 +1,30 @@
+.Menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  &.desktop{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    &.true{
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &.false{
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  ul{
+    display: flex;
+    &.desktop{
+      width: 475px;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+}
+
+
