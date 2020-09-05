@@ -3,13 +3,17 @@ import './_Header.scss';
 import Menu from "./Menu/Menu";
 
 export default function Header() {
-  const [isOpen, toggle] = useState(window.innerWidth >= 768);
-  const [device, changeDevise] = useState((window.innerWidth < 768)?'mobile':'desktop');
-  const open = () => {
+  const [isOpen, toggle] = useState(false);
+  const [device, changeDevise] = useState(checkWidth());
+
+  function checkWidth(): string {
+    return (window.innerWidth < 768)?'mobile':'desktop'
+  }
+  function open(): void {
     toggle(!isOpen);
-  };
-  window.addEventListener('resize',() => {
-    changeDevise((window.innerWidth < 768)?'mobile':'desktop');
+  }
+  window.addEventListener('resize',async () => {
+    changeDevise(checkWidth());
   });
 
   return (

@@ -1,19 +1,22 @@
 html{
   --border-paddind: 30px;
-  --header-height: 40px;
+  --header-height: 60px;
+  --banner-height: 600px;
 
   --primary-color: #ef5b4c;
   --secondary-color: rgb(0,123,255);
   --background-color: #fff;
   --background2-color: #f9f9f3;
 
-  @media screen and (min-width: 360px){
+  @media screen and (max-width: 768px){
     --border-paddind: 15px;
     --header-height: 40px;
+    --banner-height: 500px;
   }
-  @media screen and (min-width: 768px){
-    --border-paddind: 30px;
-    --header-height: 60px;
+  @media screen and (max-width: 360px){
+    --border-paddind: 15px;
+    --header-height: 40px;
+    --banner-height: 400px;
   }
 }
 body{
@@ -42,4 +45,7 @@ li{
 }
 .anchor{
   visibility: hidden;
+  display: block;
+  height: 0;
+  width: 0;
 }

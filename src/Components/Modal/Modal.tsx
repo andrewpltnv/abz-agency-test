@@ -13,11 +13,13 @@ export default class Modal extends React.Component<any, any> {
   componentDidMount() {
     // @ts-ignore
     modalRoot.appendChild(this.el);
+    document.body.style.overflow = 'hidden';
   }
 
   componentWillUnmount() {
     // @ts-ignore
     modalRoot.removeChild(this.el);
+    document.body.style.overflow = 'unset';
   }
 
   render() {
